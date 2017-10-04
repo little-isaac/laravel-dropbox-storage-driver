@@ -1,7 +1,7 @@
 {
-    "name": "jeylabs/laravel-dropbox-storage-driver",
+    "name": "milind/laravel-dropbox-storage-driver",
     "description": "Dropbox storage driver for Laravel.",
-    "homepage": "https://github.com/jeylabs/laravel-dropbox-storage-driver",
+    "homepage": "https://github.com/little-isaac/laravel-dropbox-storage-driver",
     "license": "MIT",
     "authors": [
         {
@@ -12,7 +12,7 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/jeylabs/laravel-dropbox-storage-driver/issues"
+        "issues": "https://github.com/little-isaac/laravel-dropbox-storage-driver"
     },
     "keywords": [
         "laravel",
@@ -33,7 +33,7 @@
     "require": {
         "php": ">=5.6.4",
         "laravel/framework": "^5.0",
-        "league/flysystem-dropbox": "^1.0"
+        "spatie/flysystem-dropbox": "^1.0.3"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.0",

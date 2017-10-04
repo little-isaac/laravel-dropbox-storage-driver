@@ -4,8 +4,8 @@ namespace Jeylabs\Laravel\DropboxDriver;
 
 use Storage;
 use League\Flysystem\Filesystem;
-use Dropbox\Client as DropboxClient;
-use League\Flysystem\Dropbox\DropboxAdapter;
+use Spatie\Dropbox\Client as DropboxClient;
+use Spatie\FlysystemDropbox\DropboxAdapter;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
@@ -19,7 +19,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
         Storage::extend('dropbox', function ($app, $config) {
             return new Filesystem(
                 new DropboxAdapter(
-                    new DropboxClient($config['token'], $config['secret']),
+                    new DropboxClient($config['token']),
                     $this->generatePrefix($config)
                 )
             );
